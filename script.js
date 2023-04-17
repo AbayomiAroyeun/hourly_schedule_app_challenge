@@ -2,13 +2,37 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-const dayjs = require ('dayjs') 
-$(function formatDate(dateobject) {
+// const dayjs = require ('dayjs') 
+$(function () {
+// console.log($(".time-block"))
+// function displayDate() {
+  // document.getElementById("dateDisplay").innerHTML = MyDate();
+  // };
+  
+  function timeBlockUpdater() {
+  const now = dayjs().hour()
+    console.log (now)
+    const timeBlockElement = $('.time-block')
+    document.getElementById('dateDisplay').innerHTML = dayjs('2023-04-16: 14:07')
 
+    if (timeBlockElement) {
+      console.log(timeBlockElement)
+    timeBlockElement.each(function (i, el) {
+      console.log(i, el) 
+      const blockId = $(el).attr("id")
+      console.log(blockId)
+      const blockTime = Number.parseInt(blockId)
 
+      if (blockTime === now) {
+        
+      }
+      if (timeBlockElement.each) {
+        
+      }
+    })
 
-
-
+    }
+  }
 
   
   // TODO: Add a listener for click events on the save button. This code should
@@ -29,7 +53,6 @@ $(function formatDate(dateobject) {
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
-const myDate = new Date("2023-04-11 09:00");
-const myDateFormated = formatDate(myDate);
- console.log(myDateFormated);
+ timeBlockUpdater ();
+
 });
