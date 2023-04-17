@@ -4,7 +4,7 @@
 - Dynamic HTML, CSS and Javascript
 - Day.js
 - TA advice
-- Internet Resources (google reseach)
+- Internet Resources (google reseach, videos,classes)
 
 
 
